@@ -9,7 +9,6 @@ pipeline {
     environment {
         registry = "ayushs60486/vproappdock"
 	registryCredentials = 'dockerhub'
-        ARTVERSION = "${env.BUILD_ID}"
     }
 	
     stages{
