@@ -85,7 +85,7 @@ pipeline {
 			script {
 				docker.withRegistry ('', registryCredentials) {
 					dockerImage.push("V$BUILD_NUMBER")
-					dockerImage.push('latest)
+					dockerImage.push('latest')
 				}			
 			}
 		}
